@@ -56,18 +56,20 @@
     display:flex;
     align-items:center;
     justify-content:space-between;
-    height:72px;
+    height:88px;
   }
 
   .logo{
-    font-family:'Space Grotesk', sans-serif;
-    font-weight:700;
-    font-size:1.2rem;
-    color:var(--navy);
-    letter-spacing:-0.01em;
+    display:flex;
+    align-items:center;
+    text-decoration:none;
   }
 
-  .logo span{color:var(--teal);}
+  .logo img{
+    height:52px;
+    width:auto;
+    display:block;
+  }
 
   nav a{
     text-decoration:none;
@@ -392,10 +394,11 @@
 
 <header>
   <div class="wrap">
-    <div class="logo">Zona <span>Inventores</span></div>
+    <a href="#" class="logo"><img src="assets/logo.svg" alt="Zona Inventores" height="40"><sup style="font-size:0.7rem; color:var(--navy); margin-left:2px;">®</sup></a>
     <nav>
       <a href="#que-hacemos">Qué hacemos</a>
-      <a href="#sobre">Sobre el proyecto</a>
+      <a href="#sobre">El proyecto</a>
+      <a href="#sobre-mi">Sobre mí</a>
       <a href="#contacto" class="nav-cta">Contacto</a>
     </nav>
   </div>
@@ -419,7 +422,7 @@
 <section id="que-hacemos">
   <div class="wrap">
     <div class="section-label">Qué hacemos</div>
-    <h2 class="section-title">Pensamiento computacional, con las manos en la masa</h2>
+    <h2 class="section-title">Cuatro disciplinas, un mismo objetivo: que construyan</h2>
     <p class="section-text">Cada sesión combina lógica y construcción: los alumnos programan, montan circuitos, diseñan e imprimen en 3D, y ven sus ideas funcionar de verdad.</p>
 
     <div class="grid-areas">
@@ -453,7 +456,7 @@
       <div>
         <div class="section-label">Sobre el proyecto</div>
         <h2 class="section-title">Un espacio maker con recorrido</h2>
-        <p class="section-text">Zona Inventores lleva varios años funcionando en Badajoz, en colaboración con A3CEX y acogido por el Colegio San Pedro de Alcántara. Trabajamos con niños y jóvenes de distintas edades, incluyendo alumnado de altas capacidades, adaptando cada proyecto a su nivel.</p>
+        <p class="section-text">Zona Inventores lleva varios años funcionando en Badajoz, en colaboración con A3CEX y con sede en el Colegio San Pedro de Alcántara. Trabajamos con niños y jóvenes de distintas edades, incluyendo alumnado de altas capacidades, adaptando cada proyecto a su nivel.</p>
       </div>
       <div class="stat-list">
         <div class="stat">
@@ -465,8 +468,8 @@
           <div class="label">grupos cada día de la semana</div>
         </div>
         <div class="stat">
-          <div class="num">A3CEX</div>
-          <div class="label">colaboración con el Colegio San Pedro de Alcántara</div>
+          <div class="num">A medida</div>
+          <div class="label">cada alumno avanza a su ritmo, dentro de su rutina</div>
         </div>
       </div>
     </div>
@@ -476,7 +479,7 @@
 <section id="contacto" class="contact-section">
   <div class="wrap">
     <div class="section-label">Contacto</div>
-    <h2 class="section-title">¿Hablamos de tu peque inventor?</h2>
+    <h2 class="section-title">¿Hablamos de tu futuro inventor?</h2>
     <p class="section-text">Escríbenos o llámanos, te contamos cómo funcionan los grupos y la disponibilidad.</p>
 
     <div class="contact-cards">
@@ -496,9 +499,26 @@
   </div>
 </section>
 
+<section id="sobre-mi">
+  <div class="wrap">
+    <div class="about-grid">
+      <div>
+        <div class="section-label">Sobre mí</div>
+        <h2 class="section-title">¿Quién está detrás de Zona Inventores?</h2>
+        <p class="section-text">Soy José Miguel, Ingeniero Técnico Industrial y llevo más de 10 años dedicado a la enseñanza de la tecnología. Empecé en la automatización y la electrónica, y con el tiempo descubrí que mi sitio estaba en trasladar ese conocimiento a los más jóvenes.</p>
+        <p class="section-text" style="margin-top:16px;">Desde hace varios años dirijo Zona Inventores en Badajoz, donde combino robótica, programación, electrónica e impresión 3D para que cada alumno aprenda construyendo. Trabajo con grupos de edades muy distintas, desde primaria hasta bachillerato y más allá, con alumnos que han continuado su trayectoria hasta la universidad, incluyendo alumnado de altas capacidades, adaptando siempre el ritmo y el reto a cada uno.</p>
+        <p class="section-text" style="margin-top:16px;">Mi forma de enseñar parte de una idea sencilla: la tecnología se entiende mejor cuando se construye con las propias manos, no solo cuando se explica.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <footer>
   <div class="wrap">
-    <div>© 2026 Zona Inventores — Badajoz</div>
+    <div style="display:flex; align-items:center; gap:10px;">
+      <img src="assets/logo.svg" alt="Zona Inventores" height="28">
+      <span>© 2026 Zona Inventores® — Badajoz</span>
+    </div>
     <div>Crea · Programa · Inventa</div>
   </div>
 </footer>
